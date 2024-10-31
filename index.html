@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Income Tax Performance Dashboard in Malaysia</title>
-        <style>
-             /* Ensure html and body take up full height */
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax Performance Dashboard in Malaysia</title>
+    <style>
+        /* Reset margin and padding for html and body, and ensure they take full height */
         html, body {
             margin: 0;
             padding: 0;
             height: 100%;
-            overflow: hidden;
+            display: flex;
+            flex-direction: column;
         }
-        /* Style the iframe to occupy full space */
+        
+        /* Flexbox container that makes the iframe take up remaining space */
+        .iframe-container {
+            flex: 1;
+            display: flex;
+            align-items: stretch;
+        }
+
+        /* Set iframe to take full space of its container */
         iframe {
+            flex: 1;
             width: 100%;
             height: 100%;
             border: none;
-        }            
-        </style>
-    </head>
-    
-    <body>
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe-container">
         <iframe src="https://onedrive.live.com/embed?resid=7DD9D72E4DB2A201%2127256&authkey=%21AHRuvciR0rRsSD4&em=2&wdAllowInteractivity=False&ActiveCell='Dashboard'!A7&Item='Dashboard'!A1%3AAI60&wdHideGridlines=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
-    </body>
+    </div>
+</body>
 </html>
